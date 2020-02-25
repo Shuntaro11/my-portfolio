@@ -1,0 +1,255 @@
+* {
+  box-sizing: border-box;
+}
+.toggleBtn{
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  color: #fff;
+  background: rgba(52, 58, 64, .5);
+  line-height: 70px;
+  z-index: 1;
+  border-radius: .25rem;
+  font-size: 25px;
+}
+.head{
+  .mainbackground{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(portfolio3new.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    z-index: -1;
+    background-attachment: fixed;
+  }
+  .mainVisual{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(portfolio1new.png);
+    background-size: cover;
+    background-position: bottom center;
+    padding-top: 10vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    .content{
+      text-align: center;
+      font-family: 'Permanent Marker', cursive;
+      .content__title{
+        color: white;
+        font-size: 6rem;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+      p{
+        color: white;
+        font-size: 2rem;
+        text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      }
+      h2{
+        margin-top: 45vh;
+        color: #e9e0da;
+        font-size: 1rem;
+        &:hover{
+          color: white;
+          text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }
+      }
+    }
+  }
+}
+.main{
+  background: linear-gradient(-135deg, #e9e0da, #e2d7d4 ) fixed;
+  .navContainer{
+    width: 100vw;
+    padding-bottom: 40px;
+    nav{
+      height: 200px;
+      width: 800px;
+      margin: 0 auto;
+      display: flex;
+      .box{
+        height: 200px;
+        width: 200px;
+        background-color: #acbac7;
+        border-radius: 1rem;
+        text-decoration: none;
+        text-align: center;
+        line-height: 200px;
+        font-size: 2rem;
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        &:hover{
+          background-color: #93a9bc;
+          font-size: 3rem;
+          text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
+        }
+        &:active{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  #profile{
+    background-image: url(background12.jpg);
+  }
+  #skills{
+    background-image: url(background5.jpg);
+  }
+  #works{
+    background-image: url(background8.jpg);
+    width: 100vw;
+  }
+  #hobby{
+    background-image: url(background8.jpg);
+  }
+  #contact{
+    background-image: url(background7.jpg);
+    margin-bottom: 0;
+  }
+  #foot{
+    background-image: url(background7.jpg);
+    margin-bottom: 0;
+  }
+  .container{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-height: 800px;
+    padding-top: 40px;
+    width: 95vw;
+    margin: 0 auto;
+    margin-bottom: 120px;
+    .title{
+      text-align: center;
+      font-size: 5rem;
+      font-family: 'Permanent Marker', cursive;
+      margin-bottom: 20px;
+      color: #fff;
+      text-shadow: 10px 10px 10px rgb(0, 0, 0);
+    }
+    .block{
+      height: 70vh;
+      width: 95vw;
+      background: rgba(5, 9, 12, 0.5);
+      padding: 2vw;
+      display: flex;
+      position: relative;
+      max-height: 500px;
+      .round{
+        display: inline-block;
+        width: 30vw;
+        height: 350px;
+        overflow: hidden;
+        margin-right: 1vw;
+        // background-color: whitesmoke;
+        // border:solid 2px #3f3f3f;
+        .image{
+          position: absolute;
+          top: 10px;
+          left: 6vw;
+          right: 0;
+          bottom: 0;
+          width: 40vw;
+        }
+      }
+      .text{
+        font-family: 'Hiragino Kaku Gothic';
+        font-size: 1.2rem;
+        color: white;
+        h3{
+          width: 7vw;
+          margin-bottom: 3vh;
+          line-height: 32px;
+          font-weight: bold;
+        }
+        h4{
+          margin-bottom: 3vh;
+          width: 50vw;
+          line-height: 32px;
+          font-weight: bold;
+        }
+      }
+      li{
+        font-size: 1rem;
+        background: rgba(199, 207, 214, 0.5);
+        margin-bottom: 1vh;
+        padding: 0 2vw;
+        color: white;
+        line-height: 40px;
+        font-weight: bold;
+        border-radius: 3px;
+        display: inline-block;
+        display: flex;
+        justify-content: space-between;
+        max-height: 40px;
+        &:hover{
+          // background-color: #29393f;
+          background-color: white;
+          color: black;
+        }
+        &:before{
+          transition: width 1s;
+          transition-delay: 0s;
+        }
+      }
+      .a{
+        width: 80vw;
+      }
+      .b{
+        width: 40vw;
+      }
+      .c{
+        width: 60vw;
+      }
+      .d{
+        width: 40vw;
+      }
+      .e{
+        width: 95vw;
+      }
+      .f{
+        width: 50vw;
+      }
+    }
+    .slider{
+      position: relative;
+      padding-bottom: 300px;
+      .slick-arrow{
+        background: rgba(199, 207, 214, 0.5);
+        color: white;
+        height: 100px;
+        width: 80px;
+        position: absolute;
+        top: 120px;
+        z-index: 1;
+        font-weight: bold;
+        text-align: center;
+        line-height: 100px;
+        border-radius: 3px;
+        font-size: 40px;
+        // border: solid 1px white;
+        &:hover{
+          background: rgba(139, 145, 150, 0.5);
+        }
+      }
+      h5{
+        color: white;
+        font-size: 30px;
+        font-family: 'Osaka-Mono';
+        text-align: center;
+        margin-top: 30px;
+      }
+      .next{
+        right: 0;
+      }
+      .image{
+        width: 50vw;
+        margin: 0 auto;
+      }
+    }
+  }
+}

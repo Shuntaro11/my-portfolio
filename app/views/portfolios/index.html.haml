@@ -1,0 +1,100 @@
+= link_to "#", class: "toggleBtn" do
+  = icon('fas', 'bars')
+.head
+  .mainbackground
+  .mainVisual
+    .content
+      %h1.content__title Portfolio
+      %p Shuntaro Futemma
+      %h2 Kilimanjaro is a snow-covered mountain 19,710 feet high, and is said to be the highest mountain in Africa. Its western summit is called the Masai 'Ngaje Ngai', the House of God. Close to the western summit there is a dried and frozen carcas of a leopard. No one has explained what the leopard was seeking at that altitude. -Ernest Hemingway
+.main
+  .navContainer
+    %nav
+      = link_to "#profile", class: "box" do
+        Profile
+      = link_to "#skills", class: "box" do
+        Skill
+      = link_to "#works", class: "box" do
+        Works
+      = link_to "#contact", class: "box" do
+        Contact
+    %nav
+      = link_to "#", class: "box" do
+        GitHub
+      = link_to "#", class: "box" do
+        Qiita
+      = link_to "https://twitter.com/shun_fute", class: "box" do
+        Twitter
+      = link_to "#hobby", class: "box" do
+        Hobby
+  .container#profile
+    .title
+      Profile
+    .block
+      .round
+        = image_tag "プロフィール画像１.png", class: 'image'
+      .text
+        %h3 ・名前 ：
+        %h3 ・経歴 ：
+      .text
+        %h4.name  Shuntaro Futemma
+        %h4.experience  専門学校 東京デザイナー学院 2016年卒業。前職は豚骨ラーメン屋の店長(オーストラリア)。23歳でオーストラリアへ渡り、新規店舗の立ち上げ、第二店舗の出店に店長として携わり、行列店を作る。忙しい日々を送る中、海外でエンジニアの友達と出会いプログラミングの魅力に感動し、帰国を決める。現在、TECH::EXPERTにて学習する毎日。
+  .container#skills
+    .title
+      Skills
+    .block
+      %ul
+        %li.a 
+          %p Ruby / Ruby on rails
+          %p ★★★★☆ 80%
+        %li.b
+          %p Java / SpringBoot
+          %p ★★☆☆☆ 40%
+        %li.a
+          %p HTML / CSS
+          %p ★★★★☆ 80%
+        %li.c
+          %p JavaScript / jQuery 
+          %p ★★★☆☆ 60%
+        %li.c
+          %p Git / Github
+          %p ★★★☆☆ 60%
+        %li.c
+          %p MySQL
+          %p ★★★☆☆ 60%
+        %li.f
+          %p Docker CircleCI AWS Heroku
+          %p Now Studying...
+        %li.f
+          %p English
+          %p 50%
+        %li.e
+          %p Ramen
+          %p 130%
+  .container#works
+    .title
+      Works
+    %ul.slider
+      %li
+        =link_to "#" do
+          = image_tag "アプリ1.jpg",class: "image"
+        %h5 SNSアプリ / Ruby on rails
+      %li
+        =link_to "#" do
+          = image_tag "アプリ2.jpg",class: "image"
+        %h5 ポートフォリオ / Ruby on rails
+      %li
+        =link_to "#" do
+          = image_tag "portfolio4.jpg",class: "image"
+      %li
+        =link_to "#" do
+          = image_tag "portfolio9.jpg",class: "image"
+  .container#hobby
+    .title
+      Hobby
+    .block
+  .container#contact
+    .title
+      Contact
+    .block
+  .container#foot
