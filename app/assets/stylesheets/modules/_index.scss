@@ -23,7 +23,6 @@
     background-size: cover;
     background-position: bottom center;
     z-index: -1;
-    background-attachment: fixed;
   }
   .mainVisual{
     height: 100vh;
@@ -115,7 +114,6 @@
     margin-bottom: 0;
   }
   .container{
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -124,7 +122,6 @@
     width: 95vw;
     margin: 0 auto;
     margin-bottom: 120px;
-    -webkit-background-size:cover;
     .title{
       text-align: center;
       font-size: 5rem;
@@ -257,5 +254,13 @@
         margin: 0 auto;
       }
     }
+  }
+}
+@media screen and(min-width: 960px) {
+  .mainbackground{
+    background-attachment: fixed;
+  }
+  .container{
+    background-attachment: fixed;
   }
 }
