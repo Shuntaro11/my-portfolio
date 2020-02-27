@@ -97,6 +97,7 @@
   }
   #skills{
     background-image: url(background5.jpg);
+    max-height: 900px;
   }
   #works{
     background-image: url(background8.jpg);
@@ -123,6 +124,7 @@
     width: 95vw;
     margin: 0 auto;
     margin-bottom: 120px;
+    -webkit-background-size:cover;
     .title{
       text-align: center;
       font-size: 5rem;
@@ -139,6 +141,10 @@
       display: flex;
       position: relative;
       max-height: 500px;
+      &-skills{
+        height: 85vh;
+        max-height: 700px;
+      }
       .round{
         display: inline-block;
         width: 30vw;
