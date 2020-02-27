@@ -1,14 +1,6 @@
 * {
   box-sizing: border-box;
 }
-.cover{
-  cursor: pointer;
-  z-index: 20;
-  background: rgba(118, 126, 134, 0.5);
-  &:hover{
-    background: #464b4e80;
-  }
-}
 .toggleBtn{
   position: fixed;
   right: 15px;
@@ -21,6 +13,7 @@
   z-index: 10;
   border-radius: .25rem;
   font-size: 25px;
+  background: rgba(118, 126, 134, 0.5);
   ul {
     list-style: none;
     background: rgba(118, 126, 134, 0.5);
@@ -48,6 +41,11 @@
     opacity:1;
     transform:rotate(0);
   }
+}
+.cover{
+  cursor: pointer;
+  z-index: 20;
+  background: none;
 }
 .head{
   .mainbackground{
