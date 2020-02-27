@@ -1,6 +1,14 @@
 * {
   box-sizing: border-box;
 }
+.cover{
+  cursor: pointer;
+  z-index: 20;
+  background: rgba(118, 126, 134, 0.5);
+  &:hover{
+    background: #464b4e80;
+  }
+}
 .toggleBtn{
   position: fixed;
   right: 15px;
@@ -9,11 +17,37 @@
   height: 70px;
   text-align: center;
   color: #fff;
-  background: rgba(52, 58, 64, .5);
   line-height: 70px;
-  z-index: 1;
+  z-index: 10;
   border-radius: .25rem;
   font-size: 25px;
+  ul {
+    list-style: none;
+    background: rgba(118, 126, 134, 0.5);
+    max-height: 0;
+    transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
+    overflow: hidden;
+    visibility: hidden;
+    border-radius:3px;
+    li{
+      &:hover{
+        background: #464b4e80;
+      }
+      .box{
+        color: white;
+        text-decoration: none;
+        font-size: 15px;
+        width: 100px;
+        font-weight: bold;
+      }
+    }
+  }
+  ul.open {
+    max-height: 600px;
+    visibility: visible;
+    opacity:1;
+    transform:rotate(0);
+  }
 }
 .head{
   .mainbackground{
@@ -23,6 +57,7 @@
     background-size: cover;
     background-position: bottom center;
     z-index: -1;
+    background-attachment: fixed;
   }
   .mainVisual{
     height: 100vh;
@@ -114,6 +149,7 @@
     margin-bottom: 0;
   }
   .container{
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -254,15 +290,5 @@
         margin: 0 auto;
       }
     }
-  }
-}
-
-
-@media screen and(min-width: 960px){
-  .mainbackground{
-    background-attachment: fixed;
-  }
-  .container{
-    background-attachment: fixed;
   }
 }

@@ -7,4 +7,8 @@ $(function() {
     prevArrow:'<div class="prev"><i class="fas fa-chevron-left"></i></div>',
     nextArrow:'<div class="next"><i class="fas fa-chevron-right"></i></div>',
   });
+  $(".toggleBtn").click(function (){
+    $("ul").toggleClass("open");
+  });
 });
+

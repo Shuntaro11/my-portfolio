@@ -1,5 +1,31 @@
-= link_to "#", class: "toggleBtn" do
-  = icon('fas', 'bars')
+.toggleBtn.cover
+.toggleBtn
+  %i.fa.fa-bars
+  %ul
+    %li
+      = link_to "#profile", class: "box" do
+        Profile
+    %li
+      = link_to "#skills", class: "box" do
+        Skill
+    %li
+      = link_to "#works", class: "box" do
+        Works
+    %li
+      = link_to "#contact", class: "box" do
+        Contact
+    %li
+      = link_to "#", class: "box" do
+        GitHub
+    %li
+      = link_to "#", class: "box" do
+        Qiita
+    %li
+      = link_to "https://twitter.com/shun_fute", class: "box" do
+        Twitter
+    %li
+      = link_to "#hobby", class: "box" do
+        Hobby
 .head
   .mainbackground
   .mainVisual
