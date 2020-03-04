@@ -24,8 +24,8 @@
       = link_to "https://twitter.com/shun_fute", class: "box" do
         Twitter
     %li
-      = link_to "#hobby", class: "box" do
-        Hobby
+      = link_to "#favorite", class: "box" do
+        Favorite
 .head
   .mainbackground
   .mainVisual
@@ -51,8 +51,8 @@
         Qiita
       = link_to "https://twitter.com/shun_fute", class: "box" do
         Twitter
-      = link_to "#hobby", class: "box" do
-        Hobby
+      = link_to "#favorite", class: "box" do
+        Favorite
   .container#profile
     .title
       Profile
@@ -89,10 +89,10 @@
           %p MySQL
           %p ★★★☆☆
         %li.f
-          %p Docker CircleCI AWS
+          %p Docker CircleCI
           %p Now Studying...
         %li.f
-          %p Heroku Slack
+          %p AWS Heroku Slack
           %p I use
         %li.f
           %p English
@@ -116,12 +116,41 @@
         =link_to "#" do
           = image_tag "application3.jpg",class: "image"
         %h5 栄養管理サイト / Ruby on rails / 制作中…
-  .container#hobby
+  .container#favorite
     .title
-      Hobby
-    .block
+      Favorite
+    .block.block-favorite
+      .text-1 
+        SOUTHERN ALL STARS
+      .text-2 
+        Soccer
+      .text-3
+        Watching Movies
+      .text-4
+        Camping
+        %i.fas.fa-campground
+      .text-5
+        ONE OK ROCK 
+      .text-6
+        Ramen
+      .text-7 
+        All Sports
+      .text-8 
+        HUNTER×HUNTER
+      .text-9
+        ComicBook
   .container#contact
     .title
       Contact
     .block
+      .block-contact
+        .contact-box
+          %i.fas.fa-envelope
+          %p shun.sea.f@gmail.com
+        = link_to "https://twitter.com/shun_fute" do
+          .contact-box.link
+            %i.fab.fa-twitter
+        = link_to "https://github.com/Shuntaro11" do
+          .contact-box.link
+            %i.fab.fa-github
   .container#foot
