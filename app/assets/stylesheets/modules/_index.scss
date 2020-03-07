@@ -172,6 +172,25 @@
       display: flex;
       position: relative;
       max-height: 500px;
+      .image-box{
+        display: inline-block;
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        margin-right: 10px;
+        .image{
+          position: absolute;
+          top: -40px;
+          left: 50px;
+          right: 0;
+          bottom: 0;
+          width: 350px;
+        }
+      }
+      &-profile{
+        height: 55vh;
+        max-height: 400px;
+      }
       &-skills{
         height: 85vh;
         max-height: 700px;
@@ -179,12 +198,14 @@
       &-favorite{
         position: relative;
         color: white;
+        height: 55vh;
+        max-height: 400px;
         .text-1 {
           font-size: 60px;
           font-family: 'Crimson Text', serif;
           font-weight: bold;
           position: absolute;
-          top: 20px;
+          top: 40px;
           left:130px;
           &:hover{
             color: #ea2e2d;
@@ -194,7 +215,7 @@
           font-size: 80px;
           font-family: 'Fugaz One', cursive;
           position: absolute;
-          top: 180px;
+          top: 200px;
           left: 280px;
           &:hover{
             transform: translate(20px, -5px);
@@ -205,7 +226,7 @@
           font-size: 25px;
           font-style: italic;
           position: absolute;
-          top: 210px;
+          top: 230px;
           left: 40px;
           &:hover{
             color: brown;
@@ -216,7 +237,7 @@
           font-size: 40px;
           font-family: 'Russo One', sans-serif;
           position: absolute;
-          top: 120px;
+          top: 140px;
           left: 70px;
           padding: 0 10px;
           i{
@@ -235,7 +256,7 @@
           font-family: 'Anton', sans-serif;
           position: absolute;
           padding: 0 10px;
-          top: 200px;
+          top: 220px;
           right: 100px;
           &:hover{
             background-color: white;
@@ -246,7 +267,7 @@
           font-size: 80px;
           font-family: 'Pacifico', cursive;
           position: absolute;
-          top: 80px;
+          top: 100px;
           left: 350px;
           &:hover{
             color: #f5a739;
@@ -256,7 +277,7 @@
           font-size: 40px;
           position: absolute;
           font-style: italic;
-          top: 30px;
+          top: 50px;
           right: 150px;
           &:hover{
             color: brown;
@@ -267,7 +288,7 @@
           font-size: 40px;
           font-family: 'Bowlby One SC', cursive;
           position: absolute;
-          top: 120px;
+          top: 140px;
           right: 140px;
           padding: 0 10px;
           &:hover{
@@ -279,27 +300,12 @@
           font-size: 40px;
           position: absolute;
           font-style: italic;
-          top: 200px;
+          top: 220px;
           left: 600px;
           &:hover{
             color: brown;
             font-weight: bold;
           }
-        }
-      }
-      .round{
-        display: inline-block;
-        width: 30vw;
-        height: 350px;
-        overflow: hidden;
-        margin-right: 1vw;
-        .image{
-          position: absolute;
-          top: -40px;
-          left: 6vw;
-          right: 0;
-          bottom: 0;
-          width: 40vw;
         }
       }
       .text{
