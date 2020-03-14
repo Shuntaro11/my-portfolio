@@ -417,19 +417,34 @@
           background: rgba(139, 145, 150, 0.5);
         }
       }
-      h5{
+      h4{
         color: white;
         font-size: 30px;
         font-family: 'Osaka-Mono';
         text-align: center;
         margin-top: 30px;
       }
-      h6{
+      h5{
         color: white;
         font-size: 22px;
         font-family: 'Osaka-Mono';
         text-align: center;
         margin-top: 30px;
+      }
+      .description{
+        background-color: rgba(0, 0, 0, 0.39);
+        width: 650px;
+        margin: auto;
+        padding: 10px;
+        border-radius: 3px;
+        margin-top: 10px;
+        h6{
+          color: white;
+          font-size: 18px;
+          font-family: 'Osaka-Mono';
+          text-align: center;
+          line-height: 35px;
+        }
       }
       .next{
         right: 0;
