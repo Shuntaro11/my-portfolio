@@ -98,24 +98,24 @@
     width: 100vw;
     padding-bottom: 40px;
     nav{
-      height: 200px;
-      width: 800px;
+      height: 130px;
+      width: 910px;
       margin: 0 auto;
       display: flex;
       .box{
-        height: 200px;
-        width: 200px;
+        height: 130px;
+        width: 130px;
         background-color: #acbac7;
         border-radius: 1rem;
         text-decoration: none;
         text-align: center;
-        line-height: 200px;
-        font-size: 2rem;
+        line-height: 130px;
+        font-size: 30px;
         font-family: 'Roboto Condensed', sans-serif;
         color: white;
         &:hover{
           background-color: #93a9bc;
-          font-size: 3rem;
+          font-size: 40px;
           text-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
         }
         &:active{
@@ -153,9 +153,9 @@
     background-repeat: no-repeat;
     max-height: 800px;
     padding-top: 40px;
-    width: 95vw;
+    width: 99vw;
     margin: 0 auto;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
     .title{
       text-align: center;
       font-size: 5rem;
@@ -166,7 +166,7 @@
     }
     .block{
       height: 70vh;
-      width: 95vw;
+      width: 99vw;
       background: rgba(5, 9, 12, 0.5);
       padding: 2vw;
       display: flex;
