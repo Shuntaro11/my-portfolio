@@ -1,170 +1,185 @@
-.toggleBtn.cover
-.toggleBtn
-  %i.fa.fa-bars
-  %ul
-    %li
-      = link_to "#profile", class: "box" do
-        Profile
-    %li
-      = link_to "#skills", class: "box" do
-        Skill
-    %li
-      = link_to "#works", class: "box" do
-        Works
-    %li
-      = link_to "#contact", class: "box" do
-        Contact
-    %li
-      = link_to "https://github.com/Shuntaro11", class: "box" do
-        GitHub
-    %li
-      = link_to "#", class: "box" do
-        Qiita
-    %li
-      = link_to "https://twitter.com/shun_fute", class: "box" do
-        Twitter
-    %li
-      = link_to "#favorite", class: "box" do
-        Favorite
-.head
-  .mainbackground
-  .mainVisual
-    .content
-      %h1.content__title Portfolio
-      %p Shuntaro Futemma
-      %h2 Kilimanjaro is a snow-covered mountain 19,710 feet high, and is said to be the highest mountain in Africa. Its western summit is called the Masai 'Ngaje Ngai', the House of God. Close to the western summit there is a dried and frozen carcas of a leopard. No one has explained what the leopard was seeking at that altitude. -Ernest Hemingway
-.main
-  .navContainer
-    %nav
-      = link_to "#profile", class: "box" do
-        Profile
-      = link_to "#skills", class: "box" do
-        Skill
-      = link_to "#works", class: "box" do
-        Works
-      = link_to "#contact", class: "box" do
-        Contact
-      = link_to "https://github.com/Shuntaro11", class: "box" do
-        GitHub
-      -# = link_to "#", class: "box" do
-      -#   Qiita
-      = link_to "https://twitter.com/shun_fute", class: "box" do
-        Twitter
-      = link_to "#favorite", class: "box" do
-        Favorite
-  .container#profile
-    .title
-      Profile
-    .block.block-profile
-      .image-box
-        = image_tag "profile1.png", class: 'image'
-      .text
-        %h3 ・名前 ：
-        %h3 ・経歴 ：
-      .text
-        %h4.name  Shuntaro Futemma
-        %h4.experience  専門学校 東京デザイナー学院 工業デザイン専攻 2016年卒業。卒業後、１年間ハウスメーカーで営業職を経験。その後、２３歳でオーストラリアにて豚骨ラーメン屋の店長として新店舗の立ち上げ・第二店舗の出店企画からと店長として携わり、行列店を作る。様々な人と出会う中で、プログラミングに興味をもち帰国を決める。現在、テックキャンプにて学習する毎日。
-  .container#skills
-    .title
-      Skills
-    .block.block-skills
-      %ul
-        %li.a 
-          %p Ruby / Ruby on rails
-          %p ★★★★☆
-        %li.b
-          %p Java / SpringBoot
-          %p ★★☆☆☆
-        %li.a
-          %p HTML / CSS
-          %p ★★★★☆
-        %li.c
-          %p JavaScript / jQuery 
-          %p ★★★☆☆
-        %li.c
-          %p Git / Github
-          %p ★★★☆☆
-        %li.c
-          %p MySQL, Docker, CircleCI, AWS, Heroku
-          %p ★★★☆☆ 
-        %li.f
-          %p Trello Slack
-          %p I use
-        %li.f
-          %p English
-          %p 50%
-        %li.e
-          %p Ramen
-          %p 130%
-  .container#works
-    .title
-      Works
-    %ul.slider
-      %li
-        =link_to "https://timesns.herokuapp.com/" do
-          = image_tag "application1.jpg",class: "image"
-        %h4 SNSアプリ / Ruby on rails
-        .description
-          %h6 < 主な機能 >
-          %h6 ログイン機能, フォロー機能, グループ機能, フレンド検索 ,メッセージ機能
-          %h6 < 使用した技術 >
-          %h6 jQuery, rspec, heroku, Rubocop, CircleCI
-      %li
-        =link_to root_path do
-          = image_tag "application2.jpg",class: "image"
-        %h4 ポートフォリオ / Ruby on rails
-      %li
-        =link_to "http://18.180.1.58/" do
-          = image_tag "application3.jpg",class: "image"
-        %h4 栄養管理アプリ / Ruby on rails
-        .description
-          %h6 < 主な機能 >
-          %h6 ログイン機能, 投稿機能, アバター管理, いいね機能 ,メッセージ機能
-          %h6 < 使用した技術 >
-          %h6 jQuery, chart.js, AWS, Capistrano, CSVファイル
-      %li
-        =link_to "#works" do
-          = image_tag "furimademo1.jpg",class: "image"
-        %h5 フリマサイト / 学内カリキュラム(チーム開発)
-      %li
-        =link_to "#works" do
-          = image_tag "chatdemo1.png",class: "image"
-        %h5 チャットアプリ / 学内カリキュラム(個人開発)
-  .container#favorite
-    .title
-      Favorite
-    .block.block-favorite
-      .text-1 
-        SOUTHERN ALL STARS
-      .text-2 
-        Soccer
-      .text-3
-        Watching Movies
-      .text-4
-        Camping
-        %i.fas.fa-campground
-      .text-5
-        ONE OK ROCK 
-      .text-6
-        Ramen
-      .text-7 
-        All Sports
-      .text-8 
-        HUNTER×HUNTER
-      .text-9
-        ComicBook
-  .container#contact
-    .title
-      Contact
-    .block
-      .block-contact
-        .contact-box
-          %i.fas.fa-envelope
-          %p shun.sea.f@gmail.com
-        = link_to "https://twitter.com/shun_fute" do
-          .contact-box.link
-            %i.fab.fa-twitter
-        = link_to "https://github.com/Shuntaro11" do
-          .contact-box.link
-            %i.fab.fa-github
-  .container#foot
+-# .toggleBtn.cover
+-# .toggleBtn
+-#   %i.fa.fa-bars
+-#   %ul
+-#     %li
+-#       = link_to "#profile", class: "box" do
+-#         Profile
+-#     %li
+-#       = link_to "#skills", class: "box" do
+-#         Skill
+-#     %li
+-#       = link_to "#works", class: "box" do
+-#         Works
+-#     %li
+-#       = link_to "#contact", class: "box" do
+-#         Contact
+-#     %li
+-#       = link_to "https://github.com/Shuntaro11", class: "box" do
+-#         GitHub
+-#     %li
+-#       = link_to "#", class: "box" do
+-#         Qiita
+-#     %li
+-#       = link_to "https://twitter.com/shun_fute", class: "box" do
+-#         Twitter
+-#     %li
+-#       = link_to "#favorite", class: "box" do
+-#         Favorite
+.header
+  %p.my-name Shuntaro Futemma
+.main-container
+  .title-tag#profile
+    profile
+  .under-container#profileContainer
+  .title-tag#works
+    works
+  .under-container#worksContainer
+  .title-tag#skills
+    skills
+  .under-container#skillsContainer
+  .title-tag#contact
+    contact
+  .under-container#contactContainer
+-# .head
+-#   .mainbackground
+-#   .mainVisual
+-#     .content
+-#       %h1.content__title Portfolio
+-#       %p Shuntaro Futemma
+-#       %h2 Kilimanjaro is a snow-covered mountain 19,710 feet high, and is said to be the highest mountain in Africa. Its western summit is called the Masai 'Ngaje Ngai', the House of God. Close to the western summit there is a dried and frozen carcas of a leopard. No one has explained what the leopard was seeking at that altitude. -Ernest Hemingway
+-# .main
+-#   .navContainer
+-#     %nav
+-#       = link_to "#profile", class: "box" do
+-#         Profile
+-#       = link_to "#skills", class: "box" do
+-#         Skill
+-#       = link_to "#works", class: "box" do
+-#         Works
+-#       = link_to "#contact", class: "box" do
+-#         Contact
+-#       = link_to "https://github.com/Shuntaro11", class: "box" do
+-#         GitHub
+-#       -# = link_to "#", class: "box" do
+-#       -#   Qiita
+-#       = link_to "https://twitter.com/shun_fute", class: "box" do
+-#         Twitter
+-#       = link_to "#favorite", class: "box" do
+-#         Favorite
+-#   .container#profile
+-#     .title
+-#       Profile
+-#     .block.block-profile
+-#       .image-box
+-#         = image_tag "profile1.png", class: 'image'
+-#       .text
+-#         %h3 ・名前 ：
+-#         %h3 ・経歴 ：
+-#       .text
+-#         %h4.name  Shuntaro Futemma
+-#         %h4.experience  専門学校 東京デザイナー学院 工業デザイン専攻 2016年卒業。卒業後、１年間ハウスメーカーで営業職を経験。その後、２３歳でオーストラリアにて豚骨ラーメン屋の店長として新店舗の立ち上げ・第二店舗の出店企画からと店長として携わり、行列店を作る。様々な人と出会う中で、プログラミングに興味をもち帰国を決める。現在、テックキャンプにて学習する毎日。
+-#   .container#skills
+-#     .title
+-#       Skills
+-#     .block.block-skills
+-#       %ul
+-#         %li.a 
+-#           %p Ruby / Ruby on rails
+-#           %p ★★★★☆
+-#         %li.b
+-#           %p Java / SpringBoot
+-#           %p ★★☆☆☆
+-#         %li.a
+-#           %p HTML / CSS
+-#           %p ★★★★☆
+-#         %li.c
+-#           %p JavaScript / jQuery 
+-#           %p ★★★☆☆
+-#         %li.c
+-#           %p Git / Github
+-#           %p ★★★☆☆
+-#         %li.c
+-#           %p MySQL, Docker, CircleCI, AWS, Heroku
+-#           %p ★★★☆☆ 
+-#         %li.f
+-#           %p Trello Slack
+-#           %p I use
+-#         %li.f
+-#           %p English
+-#           %p 50%
+-#         %li.e
+-#           %p Ramen
+-#           %p 130%
+-#   .container#works
+-#     .title
+-#       Works
+-#     %ul.slider
+-#       %li
+-#         =link_to "https://timesns.herokuapp.com/" do
+-#           = image_tag "application1.jpg",class: "image"
+-#         %h4 SNSアプリ / Ruby on rails
+-#         .description
+-#           %h6 < 主な機能 >
+-#           %h6 ログイン機能, フォロー機能, グループ機能, フレンド検索 ,メッセージ機能
+-#           %h6 < 使用した技術 >
+-#           %h6 jQuery, rspec, heroku, Rubocop, CircleCI
+-#       %li
+-#         =link_to root_path do
+-#           = image_tag "application2.jpg",class: "image"
+-#         %h4 ポートフォリオ / Ruby on rails
+-#       %li
+-#         =link_to "http://18.180.1.58/" do
+-#           = image_tag "application3.jpg",class: "image"
+-#         %h4 栄養管理アプリ / Ruby on rails
+-#         .description
+-#           %h6 < 主な機能 >
+-#           %h6 ログイン機能, 投稿機能, アバター管理, いいね機能 ,メッセージ機能
+-#           %h6 < 使用した技術 >
+-#           %h6 jQuery, chart.js, AWS, Capistrano, CSVファイル
+-#       %li
+-#         =link_to "#works" do
+-#           = image_tag "furimademo1.jpg",class: "image"
+-#         %h5 フリマサイト / 学内カリキュラム(チーム開発)
+-#       %li
+-#         =link_to "#works" do
+-#           = image_tag "chatdemo1.png",class: "image"
+-#         %h5 チャットアプリ / 学内カリキュラム(個人開発)
+-#   .container#favorite
+-#     .title
+-#       Favorite
+-#     .block.block-favorite
+-#       .text-1 
+-#         SOUTHERN ALL STARS
+-#       .text-2 
+-#         Soccer
+-#       .text-3
+-#         Watching Movies
+-#       .text-4
+-#         Camping
+-#         %i.fas.fa-campground
+-#       .text-5
+-#         ONE OK ROCK 
+-#       .text-6
+-#         Ramen
+-#       .text-7 
+-#         All Sports
+-#       .text-8 
+-#         HUNTER×HUNTER
+-#       .text-9
+-#         ComicBook
+-#   .container#contact
+-#     .title
+-#       Contact
+-#     .block
+-#       .block-contact
+-#         .contact-box
+-#           %i.fas.fa-envelope
+-#           %p shun.sea.f@gmail.com
+-#         = link_to "https://twitter.com/shun_fute" do
+-#           .contact-box.link
+-#             %i.fab.fa-twitter
+-#         = link_to "https://github.com/Shuntaro11" do
+-#           .contact-box.link
+-#             %i.fab.fa-github
+-#   .container#foot
