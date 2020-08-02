@@ -85,7 +85,9 @@
     .profile-content{
       padding: 5vw;
       padding-top: 8vw;
-      font-size: 20px;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 30px;
     }
   }
 
@@ -132,6 +134,9 @@
           h5{
             font-size: 15px;
             margin-top: 10px;
+          }
+          .no-margin{
+            margin: 0;
           }
         }
       }

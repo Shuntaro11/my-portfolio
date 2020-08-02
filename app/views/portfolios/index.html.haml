@@ -8,7 +8,7 @@
   .under-container#profileContainer
     = image_tag "face-image.jpg", class: "face-image"
     .profile-content
-      専門学校 東京デザイナー学院 工業デザイン専攻 2016年卒業。卒業後、１年間ハウスメーカーで営業職を経験。その後、２３歳でオーストラリアにて豚骨ラーメン屋の店長として新店舗の立ち上げ・第二店舗の出店企画から店長として参画し行列店を作る。様々な人と出会う中で、ITの分野に興味を持ちプログラミングを学ぶことを決意し帰国。テックキャンプ渋谷校を卒業し現在に至る。
+      専門学校 東京デザイナー学院 工業デザイン専攻 2016年卒業。卒業後、１年間ハウスメーカーで営業職を経験。その後、オーストラリアにて豚骨ラーメン屋の店長として新店舗の立ち上げ・第二店舗の出店企画から店長として参画し行列店を作る。様々な人と出会う中で、ITの分野に興味を持ちプログラミングを学ぶことを決意し帰国。テックキャンプ渋谷校を卒業し現在に至る。
   
   
   .title-tag#works
@@ -17,79 +17,146 @@
     %ul.slider
       %li
         .each-work
-          =link_to "#" do
-            = image_tag "uemura.jpg",class: "work-image"
+          = image_tag "uemura.jpg",class: "work-image"
           .description
             %h3 もつ焼き屋 ホームページ
             %h5
               ＜ 主な機能 ＞
-              %br 注文受注機能、在庫管理、ログイン、レスポンシブ対応
+              %br 注文受注機能、在庫管理、管理者機能、レスポンシブ対応
             %h5
               ＜ 言語 ＞
-              %br Ruby on Rails, jQuery, Haml, scss
+              %br Ruby on Rails, jQuery, Haml, Sass
             %h5
               ＜ 使用した技術 ＞
-              %br line-bot-api、active_hash
+              %br line-bot-api、active_hash、heroku
+            %h5
+              ＜ HP URL ＞
+              = link_to "https://uemura.herokuapp.com/" do
+                %br https://uemura.herokuapp.com/
 
       %li
         .each-work
-          =link_to "https://timesns.herokuapp.com/" do
-            = image_tag "sns-app.jpg",class: "work-image"
-          .description
-            %h3 SNSアプリケーション
-            %h6 < 主な機能 >
-            %h6 ログイン機能, フォロー機能, グループ機能, フレンド検索 ,メッセージ機能
-            %h6 < 使用した技術 >
-            %h6 jQuery, rspec, heroku, Rubocop, CircleCI
-
-      %li
-        .each-work
-          =link_to "#" do
-            = image_tag "healthy-life.png",class: "work-image"
+          = image_tag "healthy-life.png",class: "work-image"
           .description
             %h3 栄養管理アプリケーション
-            %h6 < 主な機能 >
-            %h6 ログイン機能, フォロー機能, グループ機能, フレンド検索 ,メッセージ機能
-            %h6 < 使用した技術 >
-            %h6 jQuery, rspec, heroku, Rubocop, CircleCI
+            %h5
+              ＜ 主な機能 ＞
+              %br ユーザー管理、レシピ投稿・編集、コメント、いいね、検索、タグ付け、BMI管理、レスポンシブ対応
+            %h5
+              ＜ 言語 ＞
+              %br Laravel、jQuery、HTML、CSS
+            %h5
+              ＜ 使用した技術 ＞
+              %br AWS(ECS,ECR,S3,RDS)、Docker、chart.js、Vue.js
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/healthy-life" do
+                %br https://github.com/Shuntaro11/healthy-life
+            %h5
+              ＜ アプリケーション URL ＞
+              %br https://timesns.herokuapp.com/
+     
+
+      %li
+        .each-work
+          = image_tag "sns-app.jpg",class: "work-image"
+          .description
+            %h3 SNSアプリケーション
+            %h5
+              ＜ 主な機能 ＞
+              %br ユーザー管理、フォロー・フォロワー、ダイレクトメッセージ、グループメッセージ、フレンド検索、テスト、自動デプロイ
+            %h5
+              ＜ 言語 ＞
+              %br Ruby on Rails、jQuery、Haml、Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br rspec、heroku、Rubocop、CircleCI、carrierwave
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/line-sample" do
+                %br https://github.com/Shuntaro11/line-sample
+            %h5
+              ＜ アプリケーション URL ＞
+              = link_to "https://timesns.herokuapp.com/" do
+                %br https://timesns.herokuapp.com/
+
       
       %li
         .each-work
-          =link_to root_path do
-            = image_tag "blackjack.png",class: "work-image"
+          = image_tag "blackjack.png",class: "work-image"
           .description
             %h3
               ブラックジャック
-              %span Black Jack
+              %h5.no-margin Black Jack
             %h5
               ＜ 主な機能 ＞
-              %br レスポンシブデザイン、注文受注機能、在庫管理、ログイン
-              %br < 使用した言語 >
-              %br Ruby on Rails, jQuery, Haml, scss
-              %br < 使用した技術 >
-              %br line-bot-api、active_hash
+              %br 効果音、ベット機能
+            %h5
+              ＜ 言語 ＞
+              %br javascript、HTML、CSS
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/BlackJack" do
+                %br https://github.com/Shuntaro11/BlackJack
+
       %li
-        .each-work
-          =link_to "#/" do
-            = image_tag "memorygame.png",class: "work-image"
+        .each-work  
+          = image_tag "memorygame.png",class: "work-image"
           .description
             %h3
               神経衰弱 
-              %span Memory Game
-            %h6 < 主な機能 >
-            %h6 ログイン機能, 投稿機能, アバター管理, いいね機能 ,メッセージ機能
-            %h6 < 使用した技術 >
-            %h6 jQuery, chart.js, AWS, Capistrano, CSVファイル
+              %h5.no-margin Memory Game
+            %h5
+              ＜ 主な機能 ＞
+              %br 効果音、手数カウンター
+            %h5
+              ＜ 言語 ＞
+              %br javascript、HTML、CSS
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/MemoryGame" do
+                %br https://github.com/Shuntaro11/MemoryGame
       %li
         .each-work
           = image_tag "furimademo1.jpg",class: "work-image"
           .description
-            %h5 フリマサイト / 学内カリキュラム(チーム開発)
+            %h3
+              フリマサイト
+            %h5.no-margin 学内カリキュラム(チーム開発)
+            %h5
+              ＜ 主な機能 ＞
+              %br ユーザー管理、投稿、検索、単体テスト、統合テスト、
+            %h5
+              ＜ 言語 ＞
+              %br Ruby on Rails、jQuery、Haml、Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br AWS(EC2,S3)、carrierwave
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/the-furima" do
+                %br https://github.com/Shuntaro11/the-furima
+            
       %li
         .each-work
           = image_tag "chatdemo1.png",class: "work-image"
           .description
-            %h5 チャットアプリ / 学内カリキュラム(個人開発)
+            %h3
+              チャットアプリ
+            %h5.no-margin テックキャンプカリキュラム(個人開発)
+            %h5
+              ＜ 主な機能 ＞
+              %br ユーザー管理、投稿、ユーザー検索、単体テスト、統合テスト、
+            %h5
+              ＜ 言語 ＞
+              %br Ruby on Rails、jQuery、Haml、Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br AWS(EC2,S3)、carrierwave
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/chat-space" do
+                %br https://github.com/Shuntaro11/chat-space
 
 
   .title-tag#skills
