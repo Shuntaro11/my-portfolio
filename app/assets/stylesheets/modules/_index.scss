@@ -64,7 +64,8 @@
 
   .under-container{
     width: 100vw;
-    height: 450px;
+    min-height: 450px;
+    padding-bottom: 20px;
     position: absolute;
     top: 0;
     left: 0;
@@ -119,6 +120,7 @@
         padding: 3vw 4vw 0;
         .work-image{
           width: 50vw;
+          height: 28vw;
           border: 1px solid darkslategray;
         }
         .description{
@@ -150,12 +152,23 @@
     background: rgb(61, 63, 63);
     color: rgb(255, 255, 255);
     display: none;
+    padding: 5vw;
+    .skill-list{
+      background-color: white;
+      color: darkslategray;
+      font-family: 'Ubuntu', sans-serif;
+      margin-bottom: 20px;
+      font-size: 20px;
+      padding: 5px 10px;
+      font-weight: 700;
+    }
   }
 
   #contactContainer{
     background: rgb(2, 59, 59);
     color: rgb(209, 221, 221);
     display: none;
+
   }
 }
 
