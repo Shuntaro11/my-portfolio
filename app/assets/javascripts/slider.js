@@ -1,7 +1,7 @@
 $(function() {
   $('.slider').slick({
     centerMode: true,
-    centerPadding: '20vw',
+    centerPadding: '5vw',
     slidesToShow: 1,
     adaptiveHeight: true,
     prevArrow:'<div class="prev"><i class="fas fa-chevron-left"></i></div>',
