@@ -1,170 +1,195 @@
-.toggleBtn.cover
-.toggleBtn
-  %i.fa.fa-bars
-  %ul
-    %li
-      = link_to "#profile", class: "box" do
-        Profile
-    %li
-      = link_to "#skills", class: "box" do
-        Skill
-    %li
-      = link_to "#works", class: "box" do
-        Works
-    %li
-      = link_to "#contact", class: "box" do
-        Contact
-    %li
-      = link_to "https://github.com/Shuntaro11", class: "box" do
-        GitHub
-    %li
-      = link_to "#", class: "box" do
-        Qiita
-    %li
-      = link_to "https://twitter.com/shun_fute", class: "box" do
-        Twitter
-    %li
-      = link_to "#favorite", class: "box" do
-        Favorite
-.head
-  .mainbackground
-  .mainVisual
-    .content
-      %h1.content__title Portfolio
-      %p Shuntaro Futemma
-      %h2 Kilimanjaro is a snow-covered mountain 19,710 feet high, and is said to be the highest mountain in Africa. Its western summit is called the Masai 'Ngaje Ngai', the House of God. Close to the western summit there is a dried and frozen carcas of a leopard. No one has explained what the leopard was seeking at that altitude. -Ernest Hemingway
-.main
-  .navContainer
-    %nav
-      = link_to "#profile", class: "box" do
-        Profile
-      = link_to "#skills", class: "box" do
-        Skill
-      = link_to "#works", class: "box" do
-        Works
-      = link_to "#contact", class: "box" do
-        Contact
-      = link_to "https://github.com/Shuntaro11", class: "box" do
-        GitHub
-      -# = link_to "#", class: "box" do
-      -#   Qiita
-      = link_to "https://twitter.com/shun_fute", class: "box" do
-        Twitter
-      = link_to "#favorite", class: "box" do
-        Favorite
-  .container#profile
-    .title
-      Profile
-    .block.block-profile
-      .image-box
-        = image_tag "profile1.png", class: 'image'
-      .text
-        %h3 ・名前 ：
-        %h3 ・経歴 ：
-      .text
-        %h4.name  Shuntaro Futemma
-        %h4.experience  専門学校 東京デザイナー学院 工業デザイン専攻 2016年卒業。卒業後、１年間ハウスメーカーで営業職を経験。その後、２３歳でオーストラリアにて豚骨ラーメン屋の店長として新店舗の立ち上げ・第二店舗の出店企画からと店長として携わり、行列店を作る。様々な人と出会う中で、プログラミングに興味をもち帰国を決める。現在、テックキャンプにて学習する毎日。
-  .container#skills
-    .title
-      Skills
-    .block.block-skills
-      %ul
-        %li.a 
-          %p Ruby / Ruby on rails
-          %p ★★★★☆
-        %li.b
-          %p Java / SpringBoot
-          %p ★★☆☆☆
-        %li.a
-          %p HTML / CSS
-          %p ★★★★☆
-        %li.c
-          %p JavaScript / jQuery 
-          %p ★★★☆☆
-        %li.c
-          %p Git / Github
-          %p ★★★☆☆
-        %li.c
-          %p MySQL, Docker, CircleCI, AWS, Heroku
-          %p ★★★☆☆ 
-        %li.f
-          %p Trello Slack
-          %p I use
-        %li.f
-          %p English
-          %p 50%
-        %li.e
-          %p Ramen
-          %p 130%
-  .container#works
-    .title
-      Works
+.header
+  %p.my-name Shuntaro Futemma
+.main-container
+  
+  
+  .title-tag#profile
+    profile
+  .under-container#profileContainer
+    .profile-wrapper
+      = image_tag "face-image.jpg", class: "face-image"
+      .profile-content
+        1993年生まれ 埼玉県出身
+        %br 専門学校 東京デザイナー学院 工業デザイン専攻 2016年卒業。卒業後、１年間ハウスメーカーで営業職を経験。その後、オーストラリアにて豚骨ラーメン屋の店長として新店舗の立ち上げ・第二店舗の出店企画からマネージャーとして参画し行列店を作る。様々な人と出会う中で、ITの分野に興味を持ちプログラミングを学ぶことを決意し帰国。テックキャンプ渋谷校を卒業し現在に至る。
+  
+  
+  .title-tag#works
+    works
+  .under-container#worksContainer
     %ul.slider
       %li
-        =link_to "https://timesns.herokuapp.com/" do
-          = image_tag "application1.jpg",class: "image"
-        %h4 SNSアプリ / Ruby on rails
-        .description
-          %h6 < 主な機能 >
-          %h6 ログイン機能, フォロー機能, グループ機能, フレンド検索 ,メッセージ機能
-          %h6 < 使用した技術 >
-          %h6 jQuery, rspec, heroku, Rubocop, CircleCI
+        .each-work
+          = image_tag "uemura.jpg",class: "work-image"
+          .description
+            %h3 もつ焼き屋 ホームページ
+            %h5
+              ＜ 主な機能 ＞
+              %br 注文受注機能、在庫管理、管理者機能、レスポンシブ対応
+            %h5
+              ＜ 言語 ＞
+              %br Ruby on Rails, jQuery, Haml, Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br line-bot-api、active_hash、heroku
+            %h5
+              ＜ HP URL ＞
+              = link_to "https://uemura.herokuapp.com/" do
+                %br https://uemura.herokuapp.com/
+
       %li
-        =link_to root_path do
-          = image_tag "application2.jpg",class: "image"
-        %h4 ポートフォリオ / Ruby on rails
+        .each-work
+          = image_tag "healthy-life.png",class: "work-image"
+          .description
+            %h3 栄養管理アプリケーション
+            %h5
+              ＜ 主な機能 ＞
+              %br ユーザー管理、レシピ投稿・編集、コメント、いいね、検索、タグ付け、BMI管理、レスポンシブ対応
+            %h5
+              ＜ 言語 ＞
+              %br Laravel、jQuery、HTML、CSS
+            %h5
+              ＜ 使用した技術 ＞
+              %br AWS(ECS,ECR,S3,RDS)、Docker、chart.js、Vue.js
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/healthy-life" do
+                %br https://github.com/Shuntaro11/healthy-life
+            %h5
+              ＜ アプリケーション URL ＞
+              = link_to "http://healthylife-app.site/" do
+                %br http://healthylife-app.site/
+     
+
       %li
-        =link_to "http://18.180.1.58/" do
-          = image_tag "application3.jpg",class: "image"
-        %h4 栄養管理アプリ / Ruby on rails
-        .description
-          %h6 < 主な機能 >
-          %h6 ログイン機能, 投稿機能, アバター管理, いいね機能 ,メッセージ機能
-          %h6 < 使用した技術 >
-          %h6 jQuery, chart.js, AWS, Capistrano, CSVファイル
+        .each-work
+          = image_tag "sns-app.jpg",class: "work-image"
+          .description
+            %h3 SNSアプリケーション
+            %h5
+              ＜ 主な機能 ＞
+              %br ユーザー管理、フォロー・フォロワー、ダイレクトメッセージ、グループメッセージ、フレンド検索、テスト、自動デプロイ
+            %h5
+              ＜ 言語 ＞
+              %br Ruby on Rails、jQuery、Haml、Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br rspec、heroku、Rubocop、CircleCI、carrierwave
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/line-sample" do
+                %br https://github.com/Shuntaro11/line-sample
+            %h5
+              ＜ アプリケーション URL ＞
+              = link_to "https://timesns.herokuapp.com/" do
+                %br https://timesns.herokuapp.com/
+
+      
       %li
-        =link_to "#works" do
-          = image_tag "furimademo1.jpg",class: "image"
-        %h5 フリマサイト / 学内カリキュラム(チーム開発)
+        .each-work
+          = image_tag "blackjack.png",class: "work-image"
+          .description
+            %h3
+              ブラックジャック
+              %h5.no-margin Black Jack
+            %h5
+              ＜ 主な機能 ＞
+              %br 効果音、ベット機能
+            %h5
+              ＜ 言語 ＞
+              %br javascript、HTML、CSS
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/BlackJack" do
+                %br https://github.com/Shuntaro11/BlackJack
+
       %li
-        =link_to "#works" do
-          = image_tag "chatdemo1.png",class: "image"
-        %h5 チャットアプリ / 学内カリキュラム(個人開発)
-  .container#favorite
-    .title
-      Favorite
-    .block.block-favorite
-      .text-1 
-        SOUTHERN ALL STARS
-      .text-2 
-        Soccer
-      .text-3
-        Watching Movies
-      .text-4
-        Camping
-        %i.fas.fa-campground
-      .text-5
-        ONE OK ROCK 
-      .text-6
-        Ramen
-      .text-7 
-        All Sports
-      .text-8 
-        HUNTER×HUNTER
-      .text-9
-        ComicBook
-  .container#contact
-    .title
-      Contact
-    .block
-      .block-contact
-        .contact-box
-          %i.fas.fa-envelope
-          %p shun.sea.f@gmail.com
-        = link_to "https://twitter.com/shun_fute" do
-          .contact-box.link
-            %i.fab.fa-twitter
-        = link_to "https://github.com/Shuntaro11" do
-          .contact-box.link
-            %i.fab.fa-github
-  .container#foot
+        .each-work  
+          = image_tag "memorygame.png",class: "work-image"
+          .description
+            %h3
+              神経衰弱 
+              %h5.no-margin Memory Game
+            %h5
+              ＜ 主な機能 ＞
+              %br 効果音、手数カウンター
+            %h5
+              ＜ 言語 ＞
+              %br javascript、HTML、CSS
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/MemoryGame" do
+                %br https://github.com/Shuntaro11/MemoryGame
+      %li
+        .each-work
+          = image_tag "furimademo1.jpg",class: "work-image"
+          .description
+            %h3
+              フリマサイト
+            %h5.no-margin 学内カリキュラム(チーム開発)
+            %h5
+              ＜ 主な機能 ＞
+              %br ユーザー管理、投稿、検索、単体テスト、統合テスト、
+            %h5
+              ＜ 言語 ＞
+              %br Ruby on Rails、jQuery、Haml、Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br AWS(EC2,S3)、carrierwave
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/the-furima" do
+                %br https://github.com/Shuntaro11/the-furima
+            
+      %li
+        .each-work
+          = image_tag "chatdemo1.png",class: "work-image"
+          .description
+            %h3
+              チャットアプリ
+            %h5.no-margin テックキャンプカリキュラム(個人開発)
+            %h5
+              ＜ 主な機能 ＞
+              %br ユーザー管理、投稿、ユーザー検索、単体テスト、統合テスト、
+            %h5
+              ＜ 言語 ＞
+              %br Ruby on Rails、jQuery、Haml、Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br AWS(EC2,S3)、carrierwave
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/chat-space" do
+                %br https://github.com/Shuntaro11/chat-space
+
+
+  .title-tag#skills
+    skills
+  .under-container#skillsContainer
+    %ul
+      %li.skill-list
+        %p Ruby / Ruby on rails
+      %li.skill-list
+        %p PHP / Laravel
+      %li.skill-list
+        %p HTML / CSS
+      %li.skill-list
+        %p JavaScript / jQuery 
+      %li.skill-list
+        %p SQL, Docker, CircleCI, AWS, Heroku 
+      %li.skill-list
+        %p English
+
+  .title-tag#contact
+    contact
+  .under-container#contactContainer
+    .adress-box
+      %i.fas.fa-envelope
+      %p shun.sea.f@gmail.com
+    .under-bar
+      = link_to "https://twitter.com/shun_fute" do
+        .contact-box.link
+          %i.fab.fa-twitter
+      = link_to "https://github.com/Shuntaro11" do
+        .contact-box.link
+          %i.fab.fa-github
+
