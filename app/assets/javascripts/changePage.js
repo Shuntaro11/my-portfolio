@@ -2,7 +2,7 @@ $(function(){
 
   function displayProfile(){
 
-    $("#profileContainer").css("display", "flex");
+    $("#profileContainer").css("display", "block");
     $("#worksContainer").css("display", "none");
     $("#skillsContainer").css("display", "none");
     $("#contactContainer").css("display", "none");
