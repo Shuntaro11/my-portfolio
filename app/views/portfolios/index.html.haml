@@ -19,6 +19,46 @@
     %ul.slider
       %li
         .each-work
+          = image_tag "sog.jpg",class: "work-image"
+          .description
+            %h3 アウトドア用品シェアサービス
+            %h5
+              ＜ 言語 ＞
+              %br Laravel/PHP, jQuery, Html, Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br docker, circleCI, Google Map API, ajax, heroku
+            %h5
+              ＜ 作品 URL ＞
+              = link_to "http://share-outdoor-gear.herokuapp.com/" do
+                %br http://share-outdoor-gear.herokuapp.com/
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/share-outdoor-gear" do
+                %br https://github.com/Shuntaro11/share-outdoor-gear
+
+      %li
+        .each-work
+          = image_tag "logicalizegoal.png",class: "work-image"
+          .description
+            %h3 目標管理アプリケーション
+            %h5
+              ＜ 言語 ＞
+              %br Laravel/PHP, Vue.js, jQuery, Html, Sass
+            %h5
+              ＜ 使用した技術 ＞
+              %br docker, circleCI, heroku
+            %h5
+              ＜ HP URL ＞
+              = link_to "http://lozicalizegoals.herokuapp.com/" do
+                %br http://lozicalizegoals.herokuapp.com/
+            %h5
+              ＜ Git URL ＞
+              = link_to "https://github.com/Shuntaro11/logicalize-goals" do
+                %br https://github.com/Shuntaro11/logicalize-goals
+
+      %li
+        .each-work
           = image_tag "uemura.jpg",class: "work-image"
           .description
             %h3 もつ焼き屋 ホームページ
